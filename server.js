@@ -8,7 +8,11 @@ app.get("/todo", function(req, res) {
 });
 
 app.get("/", function(req, res) {
-	res.end("GET success");
+	res.end("GET root");
+});
+
+app.get("/testroute", function(req, res) {
+	res.end("GET testroute");
 });
 
 http.createServer(app).listen(port);
